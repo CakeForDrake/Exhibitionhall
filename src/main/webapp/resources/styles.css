@@ -1,0 +1,134 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  font-family: Marker Felt, monospace;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+html {
+  background-image: url(images/index.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100%;
+}
+
+
+.block-level {
+    width: 1400px;
+    height: 850px;
+    margin-top: 20px;
+    margin-left: 240px;
+    position: relative;
+    float: left;
+    border: outset;
+    border-color: #000000;
+    border-width: 5px;
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+}
+.drop-shadow.right {
+    box-shadow: 4px 0 2px -2px rgba(0,0,0,0.4)
+}
+
+.img-block{
+	width: 550px;
+	height: 350px;
+	margin-left: 40px;
+	position: relative;	
+	left: 10px;
+	float: left;
+}
+
+.img-block-right{
+	width: 550px;
+	height: 350px;
+	margin-right: -40px;
+	position: relative;
+	float: right;
+}
+
+.img-block-left_b{
+	width: 550px;
+	height: 350px;
+	margin-left: 40px;
+	margin-top: 77px;
+	position: relative;	
+	left: 10px;
+	float: left;
+	float: bottom;
+}
+
+.img-block-right_b{
+	width: 550px;
+	height: 350px;
+	margin-right: 50px;
+	margin-top: 78px;
+	position: relative;
+	right: 50px;
+	float: right;
+	float: bottom;
+}
+
+.hall1-name{
+	position: relative;
+	left: 275px;
+	top: 5px;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-weight: 400;
+	font-size: 40px;
+}
+
+.hall2-name{
+	position: relative;
+	right: 275px;
+	top: -45px;
+	float: right;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-weight: 400;
+	font-size: 40px;
+}
+
+.hall3-name{
+	position: relative;
+	left: -325px;
+	bottom: -375px;
+	float: left;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-weight: 400;
+	font-size: 40px;
+}
+
+.hall4-name{
+	position: relative;
+	left: 385px;
+	top: 325px;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-weight: 400;
+	font-size: 40px;
+}
