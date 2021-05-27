@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="J2EE 1.4-J2EE 1.4">
+  <library name="j2ee">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/j2ee.jar!/" />
     </CLASSES>

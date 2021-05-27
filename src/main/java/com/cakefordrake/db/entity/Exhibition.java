@@ -23,6 +23,30 @@ public class Exhibition {
         this.price = price;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTheme(String theme) {
+        this.theme = theme;
+    }
+
+    public void setDateTime(Date dateTime) {
+        this.dateTime = dateTime;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public void setHall(int hall) {
+        this.hall = hall;
+    }
+
+    public int getHall() {
+        return hall;
+    }
+
     public Date getDateTime() {
         return dateTime;
     }

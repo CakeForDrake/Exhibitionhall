@@ -1,5 +1,8 @@
 package com.cakefordrake;
 
+import com.cakefordrake.db.DBManager;
+import com.cakefordrake.db.entity.User;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -8,7 +11,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 @WebServlet("/home")
 public class HomeServlet extends HttpServlet{
@@ -21,7 +23,8 @@ public class HomeServlet extends HttpServlet{
         PrintWriter printWriter = response.getWriter();
         printWriter.write("Hello!");
         printWriter.close();*/
-
+        DBManager dbManager = DBManager.getInstance();
+        dbManager.insertUser(new User("Dimasik", "dimasikpivasik321","sidrpidr"));
         String path = "/resources/home.jsp";
         ServletContext servletContext = getServletContext();
         RequestDispatcher requestDispatcher = servletContext.getRequestDispatcher(path);

@@ -2,23 +2,24 @@ package com.cakefordrake.db.entity;
 
 public class User {
     private int id;
-    private String name;
+    private String login;
     private String password;
     private String sol;
     private boolean isAdmin;
 
     private User(){}
 
-    public User(String name){
-        this.name = name;
+    public User(String login){
+        this.login = login;
     }
-    public User(String name, String password){
-        this.name = name;
+    public User(String login, String password, String sol){
+        this.login = login;
         this.password = password;
+        this.sol = sol;
     }
 
-    public String getName() {
-        return name;
+    public String getLogin() {
+        return login;
     }
 
     public int getId() {
@@ -39,10 +40,6 @@ public class User {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public void setSol(String sol) {
-        this.sol = sol;
     }
 
     public void setAdmin(boolean admin) {
