@@ -4,10 +4,12 @@ import java.util.Date;
 
 public class Exhibition {
     private int id;
+    private String name;
     private String theme;
     private int hall;
     private Date dateTime;
-    private double price;
+    private String time;
+    private int price;
     private int views;
 
     private Exhibition(){}
@@ -16,11 +18,32 @@ public class Exhibition {
         this.theme = theme;
     }
 
-    public Exhibition(String theme, int hall, Date dateTime, double price){
+    public Exhibition(String name, String theme, int hall, String time, int price){
+        this.name = name;
         this.theme = theme;
         this.hall = hall;
-        this.dateTime = dateTime;
         this.price = price;
+        this.time = time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setId(int id) {
@@ -35,7 +58,7 @@ public class Exhibition {
         this.dateTime = dateTime;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 
@@ -51,7 +74,7 @@ public class Exhibition {
         return dateTime;
     }
 
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
 

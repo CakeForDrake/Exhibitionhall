@@ -29,6 +29,7 @@ public class UsersManager extends Manager {
     public void insertEntity(Object object, Connection connection) {
         user = (User) object;
         try {
+            System.out.println("IN METHOD");
             statement = connection.createStatement();
             statement.executeUpdate("INSERT exhibitionhall.users(login, password, sol) " +
                     "VALUES ('"+user.getLogin()+"', '"+user.getPassword()+"', '"+user.getSol()+"')");

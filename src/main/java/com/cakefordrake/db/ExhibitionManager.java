@@ -28,9 +28,12 @@ public class ExhibitionManager extends Manager {
         exhibition = (Exhibition) object;
         try {
             statement = connection.createStatement();
-            statement.executeUpdate(String.format("INSERT exhibitionhall.exhibition(theme, hall, datatime, price) " +
-                            "VALUES(%s, %s, %s, %s",
-                    exhibition.getTheme(),exhibition.getHall(),exhibition.getDateTime(),exhibition.getPrice()));
+            System.out.println(String.format("INSERT exhibitionhall.exhibition(name, theme, hall, datetime, price) " +
+                            "VALUES('%s', '%s', %d, '%s', %d);",
+                    exhibition.getName(),exhibition.getTheme(),exhibition.getHall(),exhibition.getTime(),exhibition.getPrice()));
+            statement.executeUpdate(String.format("INSERT exhibitionhall.exhibition(name, theme, hall, datetime, price) " +
+                            "VALUES('%s', '%s', %d, '%s', %d);",
+                    exhibition.getName(),exhibition.getTheme(),exhibition.getHall(),exhibition.getTime(),exhibition.getPrice()));
         } catch (SQLException e) {
             logger.log(Level.SEVERE,
                     "Cannot insert exhibition",

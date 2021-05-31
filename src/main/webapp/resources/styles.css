@@ -132,3 +132,124 @@ html {
 	font-weight: 400;
 	font-size: 40px;
 }
+
+.create-hall{
+	position: relative;
+	left: 300px;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-weight: 400;
+	font-size: 60px;
+	mix-blend-mode: difference;
+	color: white;
+}
+
+.j-label{
+	position: relative;
+	left: 5px;
+	top: 10px;
+	/*left: 300px;*/
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-weight: 400;
+	font-size: 45px;
+}
+
+input.create-hall1[type=text] {
+	position: absolute;
+	padding: 10px 10px;
+	margin-top: 25px;
+	right: 1000px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+input.create-hall1[type=number] {
+	position: absolute;
+	padding: 10px 10px;
+	margin-top: 25px;
+	right: 1000px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+input.create-hall1[type=datetime-local] {
+	position: absolute;
+	margin-top: 25px;
+	padding: 10px 8px;
+	right: 1000px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+select.create-hall1 {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+input.create-hall1[type=button], input.create-hall1[type=submit], input.create-hall1[type=reset] {
+	position: relative;
+	left: 20px;
+	top: 22px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 14px 40px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer; 
+}
+
+.overlay {
+  height: 40%;
+  width: 40%;
+  position: fixed;
+  z-index: 2;
+  top: 30%;
+  left: 30%;
+    background-color: rgba(0,0,0, 0.8);
+    color: white;
+    text-align: center;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.closed {
+width: 0;
+height: 0;
+}
+
+input.login[type=text]{
+	position: absolute;
+	left: 300px;
+	margin-top: 30px;
+	padding: 10px 10px;
+	border: 2px solid black;
+  border-radius: 4px;
+}
+
+button.login[type=submit]{
+	position: relative;
+	left: 0px;
+	top: 10px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 14px 40px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer; 
+}
+
+.j-label1{
+	position: relative;
+	left: -200px;
+	top: 20px;
+	/*left: 300px;*/
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-weight: 400;
+	font-size: 45px;
+}
+
